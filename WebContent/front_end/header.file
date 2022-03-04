@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+		<div class="navbar-area">
+            <div class="mobile-nav">
+                <a href="<%=request.getContextPath()%>/front_end/index/index.jsp" class="logo">
+                    <img src="<%=request.getContextPath()%>/front_end/assets/img/logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="main-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light ">
+                        <div class=logo>
+                            <a class="navbar-brand" href="<%=request.getContextPath()%>/front_end/index/index.jsp">
+                                <img src="<%=request.getContextPath()%>/front_end/assets/img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a href="<%=request.getContextPath()%>/front_end/room/roomList.jsp" class="nav-link">
+                                        房型介紹 
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%=request.getContextPath()%>/front_end/activity/actList.jsp" class="nav-link" style="text-decoration:none;">
+                                        活動介紹				
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%=request.getContextPath()%>/front_end/storeMap/storeMap.jsp" class="nav-link">
+                                        美食地圖
+                                    </a>
+                                </li>
+                                <li class="nav-item mobile-display">
+                                    <a href="<%=request.getContextPath()%>/front_end/member/memberHome.jsp" class="nav-link">
+                                        會員中心
+                                    </a>
+                                </li>
+                                <li class="nav-item mobile-display">
+                                    <a href="<%=request.getContextPath()%>/member/member.do?action=log_out" class="nav-link">
+                                        登出
+                                    </a>
+                                </li>
+                                <li class="nav-item mobile-display">
+                                    <a href="<%=request.getContextPath()%>/activity/ActivityOrder?action=lookShoppingCart" class="nav-link">
+                                        活動購物車
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="nav-btn">
+                                <li >
+                                    <a href="<%=request.getContextPath()%>/activity/ActivityOrder?action=lookShoppingCart"><i class='bx bxs-cart'></i><span id="carCount">${empty sessionScope.shoppingCar ? 0 : sessionScope.shoppingCar.size()}</span></a>
+                                </li>
+                                <li id="member-btn">
+                                    <a href="javascript:void(0)"><i class='bx bxs-user' ></i></a>
+                                </li>
+                                <div class="memberCenter-area">
+							        <a href="<%=request.getContextPath()%>/front_end/member/memberHome.jsp" class="dropdown-item ai-icon">
+							            <span>Home</span>
+							        </a>
+							        <a href="<%=request.getContextPath()%>/member/member.do?action=log_out" class="dropdown-item ai-icon">
+							            <span>Logout</span>
+							        </a>
+							    </div>
+                            </div> 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>

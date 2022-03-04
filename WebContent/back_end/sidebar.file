@@ -1,0 +1,120 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+    <div class="deznav">
+		<div class="deznav-scroll">
+			<ul class="metismenu" id="menu">
+				<li>
+					<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class='bx bxs-user-circle'></i>
+						<span class="nav-text">員工管理</span>
+					</a>
+					<ul aria-expanded="false">
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">員工資料管理</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/back_end/emp/listAllEmp.jsp">員工列表</a></li>
+								<li><a href="<%=request.getContextPath()%>/back_end/emp/addEmp.jsp">新增員工</a></li>
+							</ul>
+						</li>
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">部門管理</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/back_end/department/allDep.jsp">部門列表</a></li>
+								<li><a href="<%=request.getContextPath()%>/back_end/department/addDep.jsp">新增部門</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class='bx bxs-group'></i>
+						<span class="nav-text">會員管理</span>
+					</a>
+					<ul aria-expanded="false">
+						<li><a href="<%=request.getContextPath()%>/back_end/member/selectMemberPage.jsp">會員列表</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class='bx bxs-hotel'></i>
+						<span class="nav-text">房務管理</span>
+					</a>
+					<ul aria-expanded="false">
+						<li><a href="<%=request.getContextPath()%>/back_end/roomWork/todayWorkList.jsp">當日房務</a></li>
+						<li><a href="<%=request.getContextPath()%>/back_end/roomOrder/listAllOrder.jsp">訂單管理</a></li>
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">房型管理</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/back_end/roomType/listAllRoomType.jsp">房型列表</a></li>
+								<li><a href="<%=request.getContextPath()%>/back_end/roomType/addRoomType.jsp">新增房型</a></li>
+							</ul>
+						</li>
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">房間管理</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/back_end/room/listAllRoom.jsp">房間列表</a></li>
+								<li><a href="<%=request.getContextPath()%>/back_end/room/addRoom.jsp">新增房間</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class='bx bxs-tree'></i>
+						<span class="nav-text">活動管理</span>
+					</a>
+					<ul aria-expanded="false">
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">活動類別管理</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/activity/ActivityClass?action=getAllActClass">活動類別列表</a></li>
+							</ul>
+						</li>
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">活動管理</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/activity/Activity?action=beginActAdd">新增活動</a></li>
+								<li><a href="<%=request.getContextPath()%>/activity/Activity?action=getAll">活動列表</a></li>
+								<li><a href="<%=request.getContextPath()%>/activity/ActivityImage?action=getAll">活動圖片列表</a></li>
+							</ul>
+						</li>
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">活動場次管理</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/activity/ActivitySession?action=beginActSessionAdd">新增活動場次</a></li>
+								<li><a href="<%=request.getContextPath()%>/activity/ActivitySession?action=getAll">活動場次列表</a></li>
+							</ul>
+						</li>
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">訂單管理</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/activity/ActivityOrder?action=getAll">訂單列表</a></li>
+								<li><a href="<%=request.getContextPath()%>/activity/ActivityOrderDetail?action=getAll">訂單明細列表</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class='bx bxs-map'></i>
+						<span class="nav-text">美食地圖管理</span>
+					</a>
+					<ul aria-expanded="false">
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">店家類別</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/back_end/foodClass/allClass.jsp">店家類別列表</a></li>
+								<li><a href="<%=request.getContextPath()%>/back_end/foodClass/addClass.jsp">新增店家類別</a></li>
+							</ul>
+						</li>
+						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">店家管理</a>
+							<ul aria-expanded="false">
+								<li><a href="<%=request.getContextPath()%>/back_end/foodStore/allStore.jsp">店家列表</a></li>
+								<li><a href="<%=request.getContextPath()%>/back_end/foodStore/addStore.jsp">新增店家</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class='bx bxs-message'></i>
+						<span class="nav-text">客服管理</span>
+					</a>
+					<ul aria-expanded="false">
+						<li><a href="<%=request.getContextPath()%>/back_end/instantMessaging/chat.jsp"">客服即時通</a></li>
+						<li><a href="<%=request.getContextPath()%>/back_end/serviceCases/listAllCase.jsp">客服案件管理</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>

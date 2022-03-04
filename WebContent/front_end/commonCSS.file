@@ -1,0 +1,26 @@
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feliz Hotel</title>
+        <link rel="icon" href="<%=request.getContextPath()%>/front_end/assets/img/logo.ico" type="image/x-icon">
+        
+        <!-- Bootstrap CSS --> 
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/bootstrap.min.css">
+        <!-- Boxicons ICON CSS -->
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/boxicons.min.css">
+        <!-- Owl Carousel Min CSS --> 
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/owl.theme.default.min.css">
+        <!-- Nice Select Min CSS --> 
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/nice-select.min.css">
+        <!-- Jquery Ui CSS -->
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/jquery-ui.css">
+        <!-- creditcard CSS -->
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/creditcard.css">
+        <!-- flatpickr datepicker CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/meanmenu.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/style.css">
+        <!-- RWD CSS -->
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/front_end/assets/css/responsive.css">

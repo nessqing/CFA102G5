@@ -1,0 +1,17 @@
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feliz Hotel Admin</title>
+	<link rel="icon" href="<%=request.getContextPath() %>/back_end/assets/img/logo.ico" type="image/x-icon">
+
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/icons/flaticon/flaticon.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/icons/flaticon_1/flaticon_1.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/icons/icomoon/icomoon.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/icons/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/vendor/animate/animate.min.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/vendor/aos/css/aos.min.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/vendor/metismenu/css/metisMenu.min.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+	<link href="<%=request.getContextPath()%>/back_end/assets/css/style.css" rel="stylesheet">

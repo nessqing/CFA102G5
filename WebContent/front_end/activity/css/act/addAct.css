@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+html { 
+	font-size:62.5%;
+}	
+div.twoBtn{
+	margin-top:5%;
+	width:40%;
+	margin-left:50%;
+}	
+div.twoBtn button[type=submit]{
+	width:100px;
+	margin-left:30px;
+	font-size:20px;
+}	
+div.twoBtn button[type=reset]{
+	width:100px;
+	margin-left:95px;
+	font-size:20px;
+}
+.col-form-label{
+	vertical-align:middle;
+	line-height:70px;
+	font-size:2.2rem;
+	color:#00A600;
+}
+.form-control{
+	border-radius:2rem;
+	border:1px solid #4F4F4F;
+	margin-top:1rem;
+	font-size:2.2rem;
+}
+.actInstructionLabel{
+	width:17.2%;
+}	
+#actInstruction{
+margin-left:0;
+}
+.select{
+	width:35%;
+	height:10%;
+	color:#D94600;
+	font-size:2.2rem;
+	background-color:#F0FFF0;
+}	
+option{
+	width:30%;
+	font-size:2.2rem;
+	text-align-last: center;
+}
+.allForm{
+	margin-top:3rem;	
+}
+.form-control:focus{
+	color:#A23400;
+	vertical-align:left;
+}
+	

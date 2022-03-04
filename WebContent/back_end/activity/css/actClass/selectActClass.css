@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+	label {
+		font-size:20px;
+		color:deeppink;
+	}
+	table.dataTable tbody td{
+		color:#00AEAE;
+		font-size:30px;
+	}
+	table.dataTable thead th{
+		color:#FF0080;
+		font-size:30px;
+	}
+	table.dataTable tbody td.upstate{
+		color:#28FF28;
+	}
+	table.dataTable tbody td.downstate{
+		color:#FF2D2D;
+	}
+	input#actClassName{
+		border-radius:20px;
+		height:20px;
+		font-size:20px;
+	}	
+	input#updateActClassName,#updateActClassNo{
+		border-radius:20px;
+		height:20px;
+		font-size:20px;
+	}
+	@media only screen and (max-width: 875px)
+			table.dataTable tbody td {
+    	font-size: 20px;
+    	padding: 5px 9.375px;
+	}
+	@media only screen and (max-width: 875px)
+			table.dataTable thead th {
+    	font-size: 2px;
+	}
+	

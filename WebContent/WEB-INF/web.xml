@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>CFA102G5</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+<!-- 活動開始 -->	
+	<servlet>
+		<servlet-name>ActivityClassServlet</servlet-name>
+		<servlet-class>com.activityClass.controller.ActivityClassServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityClassServlet</servlet-name>
+		<url-pattern>/activity/ActivityClass</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ActivityServlet</servlet-name>
+		<servlet-class>com.activity.controller.ActivityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityServlet</servlet-name>
+		<url-pattern>/activity/Activity</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ActivitySessionServlet</servlet-name>
+		<servlet-class>com.activitySession.controller.ActivitySessionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivitySessionServlet</servlet-name>
+		<url-pattern>/activity/ActivitySession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ActivityImageServlet</servlet-name>
+		<servlet-class>com.activityImage.controller.ActivityImageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityImageServlet</servlet-name>
+		<url-pattern>/activity/ActivityImage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ActivityOrderServlet</servlet-name>
+		<servlet-class>com.activityOrder.controller.ActivityOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityOrderServlet</servlet-name>
+		<url-pattern>/activity/ActivityOrder</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ActivityOrderDetailServlet</servlet-name>
+		<servlet-class>com.activityOrderDetail.controller.ActivityOrderDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityOrderDetailServlet</servlet-name>
+		<url-pattern>/activity/ActivityOrderDetail</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- 促銷、評價 -->
+	<servlet>
+		<servlet-name>ActivityPromotionServlet</servlet-name>
+		<servlet-class>com.activityPromotion.controller.ActivityPromotionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityPromotionServlet</servlet-name>
+		<url-pattern>/activity/ActivityPromotion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ActivityPromotionDetailServlet</servlet-name>
+		<servlet-class>com.activityPromotionDetail.controller.ActivityPromotionDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityPromotionDetailServlet</servlet-name>
+		<url-pattern>/activity/ActivityPromotionDetail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ActivityEvaluationServlet</servlet-name>
+		<servlet-class>com.activityEvaluation.controller.ActivityEvaluationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityEvaluationServlet</servlet-name>
+		<url-pattern>/activity/ActivityEvaluationServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ActivityEvaluationDetailServlet</servlet-name>
+		<servlet-class>com.activityEvaluationDetail.controller.ActivityEvaluationDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActivityEvaluationDetailServlet</servlet-name>
+		<url-pattern>/activity/ActivityEvaluationDetail</url-pattern>
+	</servlet-mapping>
+
+<!-- 活動結束 -->
+	
+	
+	<!-- 會員開始 -->
+  <servlet>
+    <servlet-name>MemberServlet</servlet-name>
+    <servlet-class>com.member.controller.MemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/member/member.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CreditcardServlet</servlet-name>
+    <servlet-class>com.creditcard.controller.CreditcardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreditcardServlet</servlet-name>
+    <url-pattern>/creditcard/creditcard.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginHandler</servlet-name>
+    <servlet-class>com.member.controller.LoginHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginHandler</servlet-name>
+    <url-pattern>/member/LoginHandler</url-pattern>
+  </servlet-mapping>
+
+
+	<filter>
+		<filter-name>MemberFilter</filter-name>
+		<filter-class>filter.MemberFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>MemberFilter</filter-name>
+		<url-pattern>/front_end/member/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+	
+<!-- 會員結束 -->
+
+<!-- 美食照片開始   -->
+     <servlet>
+  	<servlet-name>FoodimgServlet</servlet-name>
+  	<servlet-class>com.foodImg.controller.FoodImgServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FoodimgServlet</servlet-name>
+  	<url-pattern>/FoodImg.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>FoodImgReader</servlet-name>
+  	<servlet-class>com.foodImg.controller.FoodImgReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FoodImgReader</servlet-name>
+  	<url-pattern>/FoodImgReader.do</url-pattern>
+  </servlet-mapping>
+  <!-- 美食照片結束   -->
+  
+   <!-- 美食店家開始   -->
+     <servlet>
+  	<servlet-name>FoodStoreServlet</servlet-name>
+  	<servlet-class>com.foodStore.controller.FoodStoreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FoodStoreServlet</servlet-name>
+  	<url-pattern>/FoodStoreServlet.do</url-pattern>
+  </servlet-mapping>
+  <!--   美食店家結束   -->
+  
+   <!--   美食類別開始   -->
+     <servlet>
+  	<servlet-name>FoodClassServlet</servlet-name>
+  	<servlet-class>com.foodClass.controller.FoodClassServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FoodClassServlet</servlet-name>
+  	<url-pattern>/FoodClassServlet.do</url-pattern>
+  </servlet-mapping>
+  <!-- 美食類別結束   -->
+  
+   <!-- 部門開始   -->
+    <servlet>
+  	<servlet-name>DepartmentServlet</servlet-name>
+  	<servlet-class>com.department.controller.DepartmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DepartmentServlet</servlet-name>
+  	<url-pattern>/DepartmentServlet.do</url-pattern>
+  </servlet-mapping>
+   <!-- 部門結束   -->
+   
+  <!-- 員工開始   -->
+   <servlet>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<servlet-class>com.employee.controller.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<url-pattern>/EmployeeServlet.do</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+		<filter-name>EmpFilter</filter-name>
+		<filter-class>filter.EmpFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EmpFilter</filter-name>
+		<url-pattern>/back_end/emp/addEmp.jsp</url-pattern>
+		<url-pattern>/back_end/emp/listAllEmp.jsp</url-pattern>
+
+		<url-pattern>/back_end/department/addDep.jsp</url-pattern>
+		<url-pattern>/back_end/department/allDep.jsp</url-pattern>
+
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>EmpLoginFilter</filter-name>
+		<filter-class>filter.EmpLoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EmpLoginFilter</filter-name>
+		<url-pattern>/back_end/emp/*</url-pattern>
+		<url-pattern>/back_end/activity/*</url-pattern>
+		<url-pattern>/back_end/department/*</url-pattern>
+		<url-pattern>/back_end/foodClass/*</url-pattern>
+		<url-pattern>/back_end/foodStore/*</url-pattern>
+		<url-pattern>/back_end/member/*</url-pattern>
+		<url-pattern>/back_end/room/*</url-pattern>
+		<url-pattern>/back_end/roomType/*</url-pattern>
+		<url-pattern>/back_end/serviceCases/*</url-pattern>
+		<url-pattern>/back_end/test/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+<!-- 員工結束   -->
+  
+<!-- 客服功能開始 -->
+  <servlet>
+    <servlet-name>NameServlet</servlet-name>
+    <servlet-class>com.instantMessaging.controller.NameServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NameServlet</servlet-name>
+    <url-pattern>/instantMessaging/InstantMessaging.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ServiceCasesServlet</servlet-name>
+    <servlet-class>com.serviceCases.controller.ServiceCasesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServiceCasesServlet</servlet-name>
+    <url-pattern>/serviceCases/ServiceCases.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ChatBotServlet</servlet-name>
+    <servlet-class>com.chatBot.controller.ChatBotServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChatBotServlet</servlet-name>
+    <url-pattern>/chatBot/ChatBot.do</url-pattern>
+  </servlet-mapping>
+  
+<!-- 客服功能結束 -->
+
+<!-- 訂房開始 -->
+	<servlet>
+		<servlet-name>RoomTypeServlet</servlet-name>
+		<servlet-class>com.roomType.controller.RoomTypeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoomTypeServlet</servlet-name>
+		<url-pattern>/room/RoomType</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RoomImgServlet</servlet-name>
+		<servlet-class>com.roomImg.controller.RoomImgServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoomImgServlet</servlet-name>
+		<url-pattern>/room/RoomImg</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RoomServlet</servlet-name>
+		<servlet-class>com.room.controller.RoomServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoomServlet</servlet-name>
+		<url-pattern>/room/Room</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RoomOrderServlet</servlet-name>
+		<servlet-class>com.roomOrder.controller.RoomOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoomOrderServlet</servlet-name>
+		<url-pattern>/room/RoomOrder</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RoomOrderDetailServlet</servlet-name>
+		<servlet-class>com.roomOrderDetail.controller.RoomOrderDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoomOrderDetailServlet</servlet-name>
+		<url-pattern>/room/RoomOrderDetail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RoomRsvServlet</servlet-name>
+		<servlet-class>com.roomRsv.controller.RoomRsvServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoomRsvServlet</servlet-name>
+		<url-pattern>/room/RoomRsv</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CouponServlet</servlet-name>
+		<servlet-class>com.coupon.controller.CouponServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CouponServlet</servlet-name>
+		<url-pattern>/coupon/Coupon</url-pattern>
+	</servlet-mapping>
+<!-- 訂房結束 -->
+
+</web-app>

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+	.table-responsive{
+		overflow:hidden;
+		position: relative;
+    	top: 10px;
+	}
+	table tr td img{
+		max-width:100%;
+		box-sizing:border-box;
+		display:block;
+		margin:auto;
+		width:300px;
+		height:250px;
+	}
+	table.table{
+		width:98%;
+		height:500px;
+	}
+	table th{
+		font-size:20px;
+		text-align:center;
+		color:red;
+		vertical-align:middle;
+	}	
+	table td{
+		font-size:20px;
+		text-align:center;
+	}	
+	textarea.actInstruction{
+		font-size:18px;
+		height:100px;
+	}	
+	div.query{
+		width:300px;
+		position:absolute;
+		left:1650px;
+		z-index:999;
+		top:-10px;
+	}	
+	select.querySelect{
+		font-size:15px;
+	}
+	table tr td.upstate{
+		color:#28FF28;
+	}	
+	table tr td.downstate{
+		color:#FF2D2D;
+	}
+	div.updateAndSwitch{
+		position:relative;	
+	}
+	div.queryByPage{
+		position: relative;
+    	left: 1380px;
+    	bottom: 1050px;
+    }

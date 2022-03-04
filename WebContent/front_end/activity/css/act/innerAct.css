@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body {
+	margin: 0px;
+}
+html {
+	font-size: 62.5%;
+}
+img {
+	max-width: 100%;
+	box-sizing: border-box;
+	
+}
+.actCarousel{
+	position: relative;
+}
+.read-more .read-more-title{
+	margin-bottom:5rem;
+	font-size:3rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+div i{
+	font-size:2.2rem;
+	margin-right:5rem;
+}
+div.nav-btn li a span{
+	right:35px;
+}
+div.actPrice{
+	border:1px solid gray;
+	text-align:center;
+	width:44rem;
+    bottom:120rem;
+    left: 82rem;
+    position: absolute;
+}
+#map-canvas{
+	width: 43rem;
+    height: 40rem;
+    bottom: 65rem;
+    left: 80rem;
+}
+a.chooseSession {
+    display: block;
+    background:	#009393;
+    color: #FFF;
+    border: 0;
+    text-align: center;
+    padding: 20px 30px;
+    line-height: 1;
+    text-decoration: none;
+}
+a.chooseSession:hover {
+  background: #2894FF;
+}
+#act_date{
+	width:30rem;
+}
+div.actSession div p,label,#act_date{
+	margin:0.2rem 2rem 2rem 2rem;
+}
+div.actSession{
+	border:1px solid gray;
+	background-color:#F0F0F0;
+	width:80rem;
+	position:relative;
+	left:-2rem;
+	margin-top: -35rem;
+}
+div.actSessionStartTime{
+	position: relative;
+    top: -7rem;
+    left: 45rem;
+}
+label.actPeopleNumberLabel{
+	display: inline-block;
+    position: absolute;
+    top:0.8rem;
+    left: 7.5rem;
+}
+#actPeopleNumber{
+	display: inline-block;
+    position: relative;
+    width: 10%;
+    left: 3rem;
+    height: 4rem;
+    top:-0.3rem;
+    background: transparent;
+    border: none;
+    font-size:2rem;
+}
+.plusIcon{
+	position: relative;
+    width: 2.7rem;
+    top:0.5rem;
+    right:1rem;
+    color:#00AEAE;
+    font-size:3.5rem;
+}
+.minusIcon{
+	position: relative;
+    width: 2.7rem;
+   	color:#FF7575;
+    font-size:3.5rem;
+    top:0.5rem;
+    right:17rem;
+}
+.addCar{
+	position:relative;
+	color:white;
+}
