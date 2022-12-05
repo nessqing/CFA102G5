@@ -28,4 +28,6 @@ public class RoomRsvListener implements ServletContextListener {
 		timer.schedule(new RoomRsvTimer(), 1000, 86400000);
 		System.out.println("--------++結束++------");
 	}
+	
+//	public static void main(String args[]) {}
 }
