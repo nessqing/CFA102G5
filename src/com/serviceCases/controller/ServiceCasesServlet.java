@@ -36,6 +36,9 @@ public class ServiceCasesServlet extends HttpServlet {
 				Integer mem_no = new Integer(req.getParameter("mem_no").trim());
 				String case_title = req.getParameter("case_title");
 				String case_des = req.getParameter("case_des");
+				ServiceCasesVO serviceCasesVO = new ServiceCasesVO();
+				String case_reply = null;
+				Integer case_state = 1;
 				
 				if (case_title == null || case_title.length() == 0) {
 					errorMsgs.add("案件標題請勿空白");
@@ -50,11 +53,7 @@ public class ServiceCasesServlet extends HttpServlet {
 				} else if (case_des.trim().length() > 200) {
 					errorMsgs.add("案件描述要200個字以內");
 				}
-
-				String case_reply = null;
-				Integer case_state = 1;
-
-				ServiceCasesVO serviceCasesVO = new ServiceCasesVO();
+		
 				serviceCasesVO.setMem_no(mem_no);
 				serviceCasesVO.setCase_title(case_title);
 				serviceCasesVO.setCase_des(case_des);

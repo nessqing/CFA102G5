@@ -29,7 +29,8 @@ public class ActivityOrderDAO implements I_ActivityOrderDAO {
 		try {
 			ds = (DataSource) new InitialContext().lookup("java:comp/env/jdbc/TestDB");
 		}catch(NamingException ex) {
-			ex.printStackTrace();
+//			ex.printStackTrace();
+			throw new RuntimeException(ex);
 		}	
 	}
 	

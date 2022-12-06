@@ -24,18 +24,19 @@ public class MemberClassDAO implements I_MemberClassDAO{
 		}	
 	}
 	
-	private static final String ADD_MEMBER = "INSERT INTO MEMBER VALUES (?,?,?,?,?,?,?,?,?)";
+	private static final String GET_ONE_BY_PK = "SELECT * FROM MEMBER WHERE mem_no=?";
+	private static final String GET_ALL_BY_STATE = "SELECT * FROM MEMBER WHERE mem_state=?";
 	private static final String GET_ALL = "SELECT * FROM MEMBER";
+	private static final String GET_ALL_SEX = "SELECT * FROM MEMBER WHERE mem_sex=?";
+	private static final String GET_ONE_BY_MAIL = "SELECT * FROM MEMBER WHERE mem_mail=?";
+	private static final String GET_ONE_BY_MOBILE = "SELECT * FROM MEMBER WHERE mem_mobile=?";
+	
+	private static final String ADD_MEMBER = "INSERT INTO MEMBER VALUES (?,?,?,?,?,?,?,?,?)";
 	private static final String UPDATE_MEMBER = "UPDATE MEMBER SET mem_name=?, mem_sex=?,"
 		                              + "mem_password=?, mem_mobile=?, mem_img=?,"
 		                              + "mem_add=? WHERE mem_no=?";
-	private static final String GET_ONE_BY_MAIL = "SELECT * FROM MEMBER WHERE mem_mail=?";
-	private static final String GET_ONE_BY_MOBILE = "SELECT * FROM MEMBER WHERE mem_mobile=?";
-	private static final String GET_ALL_SEX = "SELECT * FROM MEMBER WHERE mem_sex=?";
 	private static final String UPDATE_PASSWORD = "UPDATE MEMBER SET mem_password =? WHERE mem_no=?";
-	private static final String GET_ALL_BY_STATE = "SELECT * FROM MEMBER WHERE mem_state=?";
 	private static final String UPDATE_MEMBER_STATE = "UPDATE MEMBER SET mem_state=? WHERE mem_no=?";
-	private static final String GET_ONE_BY_PK = "SELECT * FROM MEMBER WHERE mem_no=?";
 	private static final String IS_USER = "SELECT * FROM MEMBER WHERE mem_mail= ? AND mem_password= ? ";
 	@Override
 	public void addMember(MemberClassVO memberClassVO) {
